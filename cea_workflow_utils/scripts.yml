@@ -5,5 +5,5 @@ Workflow Utils:
     description: Runs a command with the shell, failes on non-zero return value
     interfaces: [cli, dashboard]
     module: cea_workflow_utils.run_command
-    parameters: ["general:scenario", "cmd-step:cmd"]
+    parameters: ["general:scenario", "workflow-utils:command"]
     input-files: []
