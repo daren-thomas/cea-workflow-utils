@@ -1,0 +1,9 @@
+Workflow Utils:
+
+  - name: run-command
+    label: Execute shell command
+    description: Runs a command with the shell, failes on non-zero return value
+    interfaces: [cli, dashboard]
+    module: cea_workflow_utils.run_command
+    parameters: ["general:scenario", "cmd-step:cmd"]
+    input-files: []
