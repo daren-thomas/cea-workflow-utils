@@ -9,14 +9,14 @@ __maintainer__ = "Daren Thomas"
 __email__ = "cea@arch.ethz.ch"
 __status__ = "Production"
 
-setup(name='cea_plugin_template',
+setup(name='cea_workflow_utils',
       version=__version__,
-      description="A template plugin for the City Energy Analyst",
+      description="A small collection of CEA plugin scripts that can be used in workflows for testing purposes",
       license='MIT',
       author='Architecture and Building Systems',
       author_email='cea@arch.ethz.ch',
       url='https://github.com/architecture-building-systems/cea-plugin-template',
-      long_description="A template plugin for the City Energy Analyst - fork this and edit to create your own plugin.",
+      long_description="A small collection of CEA plugin scripts that can be used in workflows for testing purposes.",
       py_modules=[''],
       packages=find_packages(),
       package_data={},
