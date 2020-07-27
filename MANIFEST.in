@@ -1,2 +1,2 @@
-include cea_worfklow_utils/scripts.yml
+include cea_workflow_utils/scripts.yml
 include cea_workflow_utils/plugin.config
