@@ -26,7 +26,12 @@ def main(config):
     :return: None
     """
     command = config.workflow_utils.command
-    subprocess.run(command, shell=True, check=True)
+    try:
+        subprocess.run(command, shell=True, check=True)
+    except AttributeError as exp:
+        # add in some backward compatibility for py2.7
+        subprocess.check_call(command, shell=True)
+    
 
 
 if __name__ == '__main__':
