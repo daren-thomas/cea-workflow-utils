@@ -7,3 +7,11 @@ Workflow Utils:
     module: cea_workflow_utils.run_command
     parameters: ["general:scenario", "workflow-utils:command"]
     input-files: []
+
+  - name: mkdir
+    label: Create directory
+    description: Creates a directory (folder) if it doesn't exist
+    interfaces: [cli, dashboard]
+    module: cea_workflow_utils.mkdir
+    parameters: ["general:scenario", "workflow-utils:directory"]
+    input-files: []
